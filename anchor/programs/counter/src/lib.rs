@@ -13,7 +13,7 @@ declare_id!("HsKpoYcxvixTmpUjyd4em6uWxaQcPQHMADRPNxM4S51E");
 pub mod counter {
     use super::*;
 
-    pub fn initialize(ctx: Context<Initialize>, count: u64) -> Result<()> {
+    pub fn initialize(ctx: Context<initialize::Initialize>, count: u64) -> Result<()> {
         initialize::handler(ctx, count)
     }
 
